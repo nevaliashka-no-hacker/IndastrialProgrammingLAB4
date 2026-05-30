@@ -133,7 +133,7 @@ jobs:
 
       - name: Convert repository name to lowercase
         run: |
-        echo "REPO_LOWER=$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+          echo "REPO_LOWER=$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
 
       - name: Blue-green deploy to production
         run: |
